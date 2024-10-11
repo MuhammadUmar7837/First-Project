@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.footersection {
+  width: 100vw;
+  height: 40vh;
+}
+
+.footer {
+  margin: auto;
+  width: 119vh;
+ /* display: flex; */
+ background-color: #ccc;      
+
+ display: grid;
+ grid-template-columns: repeat(5, 14.4rem); /* Create four equal columns */
+
+  animation: slidefromleft 3s ease forwards; /* Apply the animation */
+  line-height: 1.2rem;
+}
+ 
+
+.imagesection {
+  width: 100%;
+}
+
+.imagesection img {
+  height: 35px;
+  margin: 3px 8px;
+}
+
+.logosection {
+  display: flex;
+  margin-top: 2.2rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+  color: rgb(122, 120, 120);
+  margin-top: 0.9rem;
+
+}
+
+.gridsection {
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    /* padding-top: 1.2rem; */
+  grid-template-columns: repeat(4, 14.4rem); /* Create four equal columns */
+  gap: 1.5rem; /* Space between the grid items */
+}
+/* Adjust grid layout for medium-sized screens (tablets, etc.) */
+@media screen and (max-width:1024px) {
+    .footer {
+   
+    
+  grid-template-columns: repeat(3, 14.4rem); /* Create four equal columns */
+  gap: 1.5rem; /* Space between the grid items */
+}
+}
+
+/* Adjust grid layout for small screens (phones, etc.) */
+@media screen and (max-width:670px) {
+    .footer {
+    /* background-color: #ccc;       */
+    
+    /* padding-top: 1.2rem; */
+  grid-template-columns: repeat(2, 14.4rem); /* Create four equal columns */
+  gap: 1.5rem; /* Space between the grid items */
+}
+@media screen and (max-width:600px) {
+    .footer {
+    /* background-color: #ccc;       */
+    
+    /* padding-top: 1.2rem; */
+  grid-template-columns: repeat(1, 14.4rem); /* Create four equal columns */
+  gap: 1.5rem; 
+}
+}
+}
+.gridsection ul li {
+    margin: 0.5rem 0;
+    line-height: 2.5rem;
+    list-style-type: none;
+}
+
+.gridsection ul li a {
+    color: rgb(122, 120, 120);
+    text-decoration: none;
+    line-height: 2.2rem;
+}
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footersection">
+         
+          <div class="footer">
+            <div class="imagesection">
+                <div class="logosection">
+                  <img src="Logo.jfif" alt="logo" />
+                  <h3>Study Sync</h3>
+                </div>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                  <br />
+                  <img src="Instagram.png" alt="" />
+                  <img src="twitter.png" alt="" />
+                  <img src="facebook.png" alt="" />
+                  <img src="youtube.png" alt="" />
+                </div>
+          
+            <div class="gridsection">
+             
+               <ul>
+                <li>
+                  <h2>Products</h2>
+                  <a href="#">Overview</a>
+                  <br>
+                  <a href="#">Solution</a>
+                  <br>
+                  <a href="#">Pricing</a>
+                  <br>
+                  <a href="#">Customers</a>
+                </li>
+               </ul>
+            </div>
+            <div class="gridsection">
+             
+               <ul>
+                <li>
+                  <h2> Company</h2>
+                  <a href="#">About</a>
+                  <br>
+                  <a href="#">Invester Relations</a>
+                  <br>
+                  <a href="#">Jobs</a>
+                  <br>
+                  <a href="#">Press</a>
+                  <br>
+                  <a href="#">Blogs</a>
+                </li>
+               </ul>
+            </div>
+            <div class="gridsection">
+              
+               <ul>
+                <li>
+                  <h2> Support</h2>
+                  <a href="#">Contact</a>
+                  <br>
+                  <a href="#">Documention</a>
+                  <br>
+                  <a href="#">Chat</a>
+                  <br>
+                  <a href="#">FAQ</a>
+                </li>
+               </ul>
+            </div>
+            <div class="gridsection">
+            
+               <ul>
+                <li>
+                  <h2>Legal</h2>
+                  <a href="#">Terms And Services</a>
+                  <br>
+                  <a href="#">Privacy Policy</a>
+                  <br>
+                  <a href="#">Cookie Setting</a>
+                  
+                </li>
+               </ul>
+            </div>
+         </div>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
